@@ -1,0 +1,124 @@
+.section-1 {
+    display: flex;
+    width: 100%;
+    padding-top: 9.7rem;
+}
+.section-1 .container {
+    justify-content: space-between;
+}
+
+.section-1 .container .left-box {
+
+}
+
+.section-1 .container .left-box .first-title{
+    max-width: 53.9rem;
+    font-weight: 700;
+    font-size: 6rem;
+    line-height: 6.4rem;
+    margin-bottom: .5rem;
+    padding-top: 7rem;
+}
+
+.section-1 .container .left-box .first-desc {
+    max-width: 42rem;
+    margin-bottom: 6rem;
+    color: #6F6F6F;
+    font-size: 3.2rem;
+    line-height: 3.9rem;
+}
+
+.section-1 .container .left-box .first-text{
+    max-width: 42rem;
+    line-height: 120%;
+}
+
+.section-1 .container .left-box .first-text p:first-child {
+    margin-bottom: 2rem;
+}
+
+.section-1 .container .left-box .first-text .btn {
+    display: inline-block;
+    max-width: 42rem;
+    margin-top: 8rem;
+}
+
+.section-1 .container .right-box {
+    max-width: 63rem;
+}
+
+.section-1 .container .right-box .slider-swiper-top {
+    height: 52.5rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.section-1 .container .right-box .slider-swiper-top .swiper-pagination {
+    position: absolute;
+    top: 12.3rem;
+    right: 0;
+}
+
+.section-1 .container .right-box .slider-swiper-top .swiper-pagination .swiper-pagination-bullet {
+    width: .2rem;
+    height: 2.5rem;
+    background: #131313;
+    opacity: 1;
+}
+
+.section-1 .container .right-box .slider-swiper-top .swiper-pagination .swiper-pagination-bullet-active {
+    background: #FF4040;
+}
+
+.section-1 .container .right-box .specifications {
+    display: flex;
+    width: 63rem;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.section-1 .container .right-box .specifications .specifications-item {
+
+}
+
+.section-1 .container .right-box .specifications .specifications-item .specifications-item__title {
+    font-weight: 700;
+    line-height: 1.7rem;
+    text-transform: uppercase;
+}
+
+.section-1 .container .right-box .specifications .specifications-item .specifications-item__description {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    text-transform: lowercase;
+}
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 992px) {
+    .section-1 {
+        padding-top: 0;
+    }
+
+    .section-1 .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-1 .container .right-box {
+        max-width: 50rem;
+        padding-top: 7rem;
+    }
+
+    .section-1 .container .right-box .specifications {
+        width: 50rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-1 .container .right-box {
+        display: none;
+    }
+}

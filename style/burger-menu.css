@@ -1,0 +1,133 @@
+.hamburger-menu {
+    display: none;
+}
+#menu__toggle {
+    opacity: 0;
+}
+/* стилизуем кнопку */
+.menu__btn {
+    display: flex; /* используем flex для центрирования содержимого */
+    position: absolute;
+    bottom: 28px;
+    right: 0;
+    width: 38px;
+    height: 14px;
+    cursor: pointer;
+    z-index: 1080;
+}
+/* добавляем "гамбургер" */
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #131313;
+}
+.menu__btn > span::before {
+    content: '';
+    top: -10px;
+}
+.menu__btn > span::after {
+    content: '';
+    top: 10px;
+}
+/* контейнер меню */
+.menu__box {
+    display: flex;
+    position: fixed;
+    visibility: hidden;
+    top: 95px;
+    right: 100%;
+    width: 440px;
+    height: 91px;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    text-align: center;
+    /*background-color: black;*/
+    box-shadow: 1px 0 6px rgba(0, 0, 0, .2);
+    opacity: 0.8;
+    z-index: 1085;
+}
+/* элементы меню */
+.menu__box .menu__item {
+    display: block;
+    text-transform: uppercase;
+    padding: 4.1rem 2rem;
+    color: #131313;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.menu__box .menu__item:hover {
+    background: #131313;
+    color: #ffffff;
+}
+#menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    right: 0;
+}
+
+@media (max-width: 1200px) {
+    .hamburger-menu {
+        display: none;
+    }
+}
+@media (max-width: 992px) {
+    .hamburger-menu {
+        display: flex;
+    }
+    #menu__toggle {
+    }
+    .menu__btn > span,
+    .menu__btn > span::before,
+    .menu__btn > span::after {
+    }
+    .menu__btn > span::before {
+
+    }
+    .menu__btn > span::after {
+
+    }
+}
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: flex;
+    }
+    #menu__toggle {
+    }
+    .menu__btn > span,
+    .menu__btn > span::before,
+    .menu__btn > span::after {
+    }
+    .menu__btn > span::before {
+    }
+    .menu__btn > span::after {
+    }
+    .menu__box {
+    }
+    .menu__item {
+    }
+    .menu__item:hover {
+    }
+    #menu__toggle:checked ~ .menu__btn > span {
+    }
+    #menu__toggle:checked ~ .menu__btn > span::before {
+    }
+    #menu__toggle:checked ~ .menu__btn > span::after {
+    }
+    #menu__toggle:checked ~ .menu__box {
+    }
+}

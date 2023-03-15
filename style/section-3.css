@@ -1,0 +1,88 @@
+.section-3 {
+    display: flex;
+    width: 100%;
+    padding-top: 15rem;
+}
+
+.section-3 .container .content-wrap .content-wrap__title {
+
+}
+
+.section-3 .container .content-wrap .content-box {
+    display: flex;
+}
+
+.section-3 .container .content-wrap .content-box .content-specific {
+    /*display: grid;*/
+    /*grid-template-columns: 1fr 1fr;*/
+    margin-top: 4rem;
+    width: 57rem;
+    padding-right: 6rem;
+}
+
+.section-3 .container .content-wrap .content-box .content-specific .content-specific__box  {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    grid-gap: .5rem;
+}
+
+.section-3 .container .content-wrap .content-box .content-specific .content-specific__box .box-title {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding: .2rem 0;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #131313;
+}
+
+.section-3 .container .content-wrap .content-box .content-specific .content-specific__box .box-item {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 120%;
+}
+
+.section-3 .container .content-wrap .content-box .content-wrap__image img {
+    /*max-width: 57rem;*/
+    margin-top: 18.2rem;
+}
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 992px) {
+    .section-3 {
+        padding-top: 8rem;
+    }
+
+    .section-3 .container .content-wrap {
+        width: 100%;
+    }
+
+    .section-3 .container .content-wrap .content-box .content-specific {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .section-3 .container .content-wrap .content-box .content-specific .content-specific__box  {
+        grid-template-columns: 38rem auto;
+    }
+
+    .section-3 .container .content-wrap .content-box .content-wrap__image {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-3 {
+        padding-top: 3rem;
+    }
+
+    .section-3 .container .content-wrap .content-box .content-specific .content-specific__box {
+        grid-template-columns: 1fr 1fr;
+    }
+}
