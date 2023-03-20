@@ -2,35 +2,31 @@
 // (function () {
 
 
-// slider-top start
+// верхний слайдер
 const swiperTop = new Swiper('.slider-swiper-top', {
-    // Optional parameters
     direction: 'vertical',
     loop: true,
     mousewheel: true,
 
-    // If we need pagination
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
     },
 });
-// slider-top end
+// -----------------
 
-// slider-bottom start
+// нижний слайдер
 const swiperBottom = new Swiper('.slider-swiper-bottom', {
-    // Optional parameters
     direction: 'vertical',
     loop: true,
     mousewheel: true,
 
-    // If we need pagination
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
     },
 });
-// slider-bottom end
+// -----------------
 
 const btnRadioGrey = document.querySelector('.radio-grey');
 const btnRadioWhite = document.querySelector('.radio-white');
@@ -58,7 +54,7 @@ btnRadioRed.addEventListener('click', function () {
     imageBicycleRed.style.display = 'block';
 });
 
-// modal window start
+// модальное окно
 const btnForm = document.querySelector('.btn-form');
 const popupFade = document.querySelector('.popup-fade');
 const popupClose = document.querySelector('.popup-close');
@@ -130,7 +126,7 @@ document.addEventListener('keydown', function (event) {
         popupFade.style.display = 'none';
     }
 });
-// modal window end
+// -----------------
 
 // btn up start
 const btnUp = {
@@ -164,6 +160,6 @@ const btnUp = {
 }
 
 btnUp.addEventListener();
-// btn up end
+// -----------------
 
 // })();

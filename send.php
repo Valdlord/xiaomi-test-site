@@ -22,6 +22,14 @@ if (!$errors) {
     $msg = "Имя: $name \nТелефон: $phone \n";
     $result = mail($to, $subject, $msg, "From: $from");
 
+//    Отправка в телеграмм старт
+
+//    $token = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+//    $chat_id = "-XXXXXXXXXXXXXX";
+//    $sendToTelegram = fopen("https://api.telegram.org/bot{$token}/sendMessage?chat_id={$chat_id}&parse_mode=html&text={$msg}","r");
+
+//    Отправка в телеграмм финиш
+
     if ($result) {
         $responce = [
             "success" => true
